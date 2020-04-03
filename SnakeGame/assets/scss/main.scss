@@ -1,0 +1,31 @@
+$primary:rgb(139, 255, 61) ;
+$secondary: rgba(247, 255, 137, 0.993);
+$dark: #1234;
+$light: rgb(254, 255, 204);
+    body{
+
+    widows: 100vh;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    background: linear-gradient(to top left,$primary 50%, $secondary 50%);
+    font-family: helvetica,fantasy,sans-serif;
+    }
+    h1{
+        margin: 0;
+        font-size: 72px;
+        color:darkred;
+    
+        &.bottom{
+            color: darkorange;
+            text-align: right;
+        }
+    }
+        canvas{
+    background-color: rgb(24, 49, 49);
+    border:5px solid $light;
+    box-shadow: 6px 6px 20px 20px transparentize($color: #000000, $amount: 0.9);
+        }

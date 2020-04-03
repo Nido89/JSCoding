@@ -1,0 +1,36 @@
+body {
+  widows: 100vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, #8bff3d), color-stop(50%, rgba(247, 255, 137, 0.993)));
+  background: linear-gradient(to top left, #8bff3d 50%, rgba(247, 255, 137, 0.993) 50%);
+  font-family: helvetica,fantasy,sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 72px;
+  color: darkred;
+}
+
+h1.bottom {
+  color: darkorange;
+  text-align: right;
+}
+
+canvas {
+  background-color: #183131;
+  border: 5px solid #feffcc;
+  -webkit-box-shadow: 6px 6px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 6px 20px 20px rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=main.css.map */

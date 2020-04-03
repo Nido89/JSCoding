@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	background: rgb(238, 255, 207);
+	color: #e77b00;
+}
+
+.game {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+
+	h2, h3 {
+		margin: 10px 0px;
+	}
+	p {
+		text-align: center;
+		color: red($color: #e70505);
+	}
+
+	.battle {
+		width: 100%;
+		margin: 10px 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.aiChoice {
+			background: #FFFFFF;
+			width: 125px;
+			height: 125px;
+			text-align: center;
+			line-height: 125px;
+			border-radius: 15px;
+			box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.25);
+
+			background-size: 75%;
+			background-repeat: no-repeat;
+			background-position: center center;
+
+			&.rock {
+				background-image: url("../images/rock.png");
+			}
+			&.paper {
+				background-image: url("../images/paper.png");
+			}
+			&.scissors {
+				background-image: url("../images/scissors.png");
+			}
+		}
+	}
+
+	.options {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		margin: 10px 0px;
+
+		.option {
+			background: #FFFFFF;
+			width: 125px;
+			height: 125px;
+			text-align: center;
+			line-height: 125px;
+			border-radius: 15px;
+			box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.25);
+			cursor: pointer;
+
+			&:hover {
+				box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+			}
+
+			background-size: 75%;
+			background-repeat: no-repeat;
+			background-position: center center;
+
+			&.rock {
+				background-image: url("../images/rock.png");
+			}
+			&.paper {
+				background-image: url("../images/paper.png");
+			}
+			&.scissors {
+				background-image: url("../images/scissors.png");
+			}
+
+			&.selected {
+                border: 3px solid rgb(255, 106, 106);
+                background-color: rgb(252, 195, 111);
+				pointer-events: none;
+				&.winner {
+					background-color: rgb(16, 141, 214);
+				}
+				&.loser {
+					background-color: rgba(177, 0, 0, 0.959);
+				}
+				&.draw {
+					background-color: rgb(167, 167, 167);
+				}
+			}
+			
+			&.disabled {
+				cursor: default;
+				pointer-events: none;
+				opacity: 0.4;
+			}
+		}
+	}
+}
+
+.hide {
+	display: none;
+}
