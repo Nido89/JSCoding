@@ -1,0 +1,156 @@
+body {
+  background: #464646;
+  font-family: "Exo2,sans-serif,fantasy";
+}
+
+.wrapper {
+  background: -webkit-gradient(linear, right top, left bottom, from(#00d3d3), to(#ffff85)), no-repeat;
+  background: linear-gradient(to bottom left, #00d3d3, #ffff85), no-repeat;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper h1 {
+  color: #464646;
+  text-transform: uppercase;
+}
+
+.wrapper .game-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .game-view .number {
+  color: red;
+  font-size: 125px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 15px;
+  margin-right: 15px;
+  background: #464646;
+  border-radius: 50px;
+}
+
+.wrapper .game-view .button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: darkblue;
+}
+
+.wrapper .game-view .button-group div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .game-view .button-group div .btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.wrapper .game-view .button-group div .btn#higher {
+  color: #464646;
+  background: lightseagreen;
+}
+
+.wrapper .game-view .button-group div .btn#higher:hover {
+  background: #f57a99;
+}
+
+.wrapper .game-view .button-group div .btn#higher:active {
+  background: #e6b900;
+}
+
+.wrapper .game-view .button-group div .btn#lower {
+  color: #464646;
+  background: #f8f808;
+}
+
+.wrapper .game-view .button-group div .btn#lower:hover {
+  background: #ffd31a;
+}
+
+.wrapper .game-view .button-group div .btn#lower:active {
+  background: #f14a75;
+}
+
+.wrapper .game-view .button-group p {
+  margin: 15px;
+}
+
+.wrapper h3 {
+  color: #00a7a7;
+  font-size: 40px;
+  line-height: 1;
+  margin: 15px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.wrapper h3.correct {
+  color: #000a64;
+}
+
+.wrapper h3.incorrect {
+  color: #af0505;
+}
+
+.wrapper h4 {
+  color: #ff00c8;
+  font-size: 28px;
+  line-height: 1;
+  margin: 15px;
+}
+
+.wrapper .score {
+  color: red;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 15px;
+  background: rgba(243, 98, 135, 0.15);
+  border-radius: 50px;
+}
+
+.hide {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  opacity: 0.1;
+}
+/*# sourceMappingURL=main.css.map */
