@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./assets/scss/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Random Generator</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Dynamic Random Generator</h1>
+        <div class="form">
+            <input type="text" name="item" id="item">
+            <button id="submit">Add</button>
+        </div>
+    </header>
+    <section id="list"></section>
+    <section id="generator">
+        <button id="generate">Generate</button>
+        <div id="generated"></div>
+    </section>
+    <script src="./assets/js/main.js"></script>  
 </body>
+
 </html>

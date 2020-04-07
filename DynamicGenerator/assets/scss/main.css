@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #3bff90;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 95px;
+  padding: 15px;
+  background-color: #3f3f3f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 5px solid gold;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+  color: gold;
+  text-align: center;
+  line-height: 1;
+  font-size: 21px;
+  margin: 0;
+  font-weight: 900;
+  margin: 0;
+}
+
+header .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0px -15px -15px -1;
+}
+
+header .form input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 20px;
+  text-indent: 10px;
+}
+
+header .form button {
+  width: auto;
+  height: 35px;
+  background-color: gold;
+  border: none;
+  outline: none;
+  color: blue;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+header .form button:hover {
+  background-color: #ccac00;
+}
+
+header .form button:active {
+  background-color: #6effad;
+}
+
+#list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 300px;
+  overflow: scroll;
+}
+
+#list .list-item {
+  padding: 15px;
+  background: #ffffff;
+  border-bottom: 1px solid gold;
+}
+
+#generator {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#generator button {
+  margin: 15px 0px;
+  width: 90%;
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: gold;
+  border-radius: 5px;
+  color: red;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#generator button:hover {
+  background-color: #ccac00;
+}
+
+#generator button:active {
+  background-color: #595959;
+}
+
+#generator #generated {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 90%;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #0058fc;
+  text-align: center;
+  font-size: 18px;
+}
+/*# sourceMappingURL=main.css.map */
